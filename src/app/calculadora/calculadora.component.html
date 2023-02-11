@@ -1,0 +1,13 @@
+<br/>
+<div>
+    SUMA 
+    <input [ngStyle]="{'background':color}"  type="text" value="{{aleatorio1}}" />
+    <input [ngStyle]="{'background':micolor}"  type="text" value="{{aleatorio2}}" />
+    <button (click)="cambiar()">Clic!</button>
+    TOTAL = {{total}}
+    <div *ngIf="encendido">Encendido!</div>
+    <div *ngIf="!encendido">Apagado!</div>
+</div>
+
+
+
