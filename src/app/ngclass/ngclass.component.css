@@ -1,0 +1,15 @@
+li {
+   background-color: antiquewhite; 
+}
+
+.itemClass {
+    color:red;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.otroItemClass {
+    color:blue;
+    font-size: 14px;
+    font-weight: bold;
+}

@@ -5,9 +5,7 @@
     <input [ngStyle]="{'background':micolor}"  type="text" value="{{aleatorio2}}" />
     <button (click)="cambiar()">Clic!</button>
     TOTAL = {{total}}
-    <div *ngIf="encendido">Encendido!</div>
-    <div *ngIf="!encendido">Apagado!</div>
+    <div *ngIf="encendido; else apagado">Encendido!</div>
+    <!-- <div *ngIf="!encendido">Apagado!</div> -->
+    <ng-template #apagado><br/>Apagado!</ng-template>
 </div>
-
-
-

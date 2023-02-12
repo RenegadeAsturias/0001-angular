@@ -1,0 +1,17 @@
+<br/>
+<div>
+    CALENDARIO:  
+    <div [ngSwitch]="diasSemana">
+        <p *ngSwitchCase="'lunes'">Hoy es lunes</p>
+        <p *ngSwitchCase="'martes'">Hoy es martes</p>
+        <p *ngSwitchCase="'miércoles'">Hoy es miércoles</p>
+        <p *ngSwitchCase="'jueves'">Hoy es jueves</p>
+        <p *ngSwitchCase="'viernes'">Hoy es viernes</p>
+        <p *ngSwitchCase="'sábado'">Hoy es sábado</p>
+        <p *ngSwitchCase="'domingo'">Hoy es domingo</p>
+        <p *ngSwitchCase="13">------ 13 -------</p>
+        <p *ngSwitchDefault>Elija un día de la semana</p>
+    </div>
+    <input type="text" [(ngModel)]="diasSemana"/> 
+</div>
+

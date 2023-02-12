@@ -1,0 +1,16 @@
+<br/>
+<div>
+    Directiva ngStyle:
+    <div [ngStyle]="{'width':'400px'}">
+
+        <div [ngStyle]="{'background':'yellow','font-size':'18px'}">Amarillo</div>
+
+        <div [ngStyle]="{'background':color}">Verde</div>
+        <div [ngStyle]="{'background':colorNaranja}">Naranja</div>
+        <div [ngStyle]="{'background':cambiarColor ? 'red' : 'aqua'}">Rojo|Azul 
+            <button (click)="onCambiarColor();">Cambiar!</button>
+        </div>
+    </div>
+</div>
+
+
