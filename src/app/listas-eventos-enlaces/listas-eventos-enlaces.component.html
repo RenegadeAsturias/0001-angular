@@ -1,0 +1,17 @@
+
+<br/>Enlaces
+<ul [ngStyle]="{'width':'800px','padding':'0px'}">
+	<li *ngFor="let libro of libros ">
+		<a href="https://google.com">{{libro.titulo}} ({{libro.precio}}€)</a>...
+        <a href="https://google.com/#g={{libro.autor}}">{{libro.titulo}}</a>
+	</li>
+</ul>
+<br/>
+
+<br/>Eventos
+<ul [ngStyle]="{'width':'600px','padding':'0px'}">
+	<li *ngFor="let aventura of aventuras ">
+		<a (click)="mostrarDetalleAventura(aventura)">{{aventura.nombre}}</a>
+	</li>
+</ul>
+<br/>

@@ -7,6 +7,8 @@ import { CalculadoraComponent } from './calculadora/calculadora.component';
 import { CalendarioComponent } from './calendario/calendario.component';
 import { NgstyleComponent } from './ngstyle/ngstyle.component';
 import { NgclassComponent } from './ngclass/ngclass.component';
+import { ListasComponent } from './listas/listas.component';
+import { ListasEventosEnlacesComponent } from './listas-eventos-enlaces/listas-eventos-enlaces.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { NgclassComponent } from './ngclass/ngclass.component';
     CalculadoraComponent,
     CalendarioComponent,
     NgstyleComponent,
-    NgclassComponent
+    NgclassComponent,
+    ListasComponent,
+    ListasEventosEnlacesComponent
   ],
   imports: [
     BrowserModule, FormsModule

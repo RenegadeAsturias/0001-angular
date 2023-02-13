@@ -1,0 +1,33 @@
+<ul [ngStyle]="{'width':'600px','padding':'0px'}">
+    <li *ngFor="let libro of libros">
+        =>Libro: ({{libro.id}}) - {{libro.titulo}} - {{libro.autor}}
+    </li>
+</ul>
+<br/>
+
+<ul [ngStyle]="{'width':'600px','padding':'0px'}">
+    <li *ngFor="let libro of libros; index as indice" 
+        [ngStyle]="{'background':indice%2==0 ? 'green' : 'aqua'}"
+        [ngClass]="indice%2==0 ? 'itemPar' : 'itemImpar'">
+        =>Libro[{{indice}}]: ({{libro.id}}) - {{libro.titulo}} - {{libro.autor}}
+        <span *ngIf="indice%2==0">*Destacado</span>
+    </li>
+</ul>
+<br/>
+
+<ul [ngStyle]="{'width':'600px','padding':'0px'}">
+	<li *ngFor="let libro of libros; index as indice; first as esPrimero ; last as esUltimo">
+		=>Libro[{{indice}}]: ({{libro.id}}) - {{libro.titulo}} - {{libro.autor}}
+		<span *ngIf="esPrimero">*First</span>
+		<span *ngIf="esUltimo"> *Last</span>
+	</li>
+</ul>
+<br/>
+
+<ul [ngStyle]="{'width':'600px','padding':'0px'}">
+	<li *ngFor="let libro of libros; index as indice; odd as esPar; even as esImpar ">
+		[{{indice}}] -{{libro.titulo}} 
+		<span *ngIf="esPar"> ( es par ) </span>
+		<span *ngIf="esImpar"> (es impar) </span>
+	</li>
+</ul>
